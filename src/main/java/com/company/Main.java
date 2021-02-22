@@ -7,8 +7,25 @@ public class Main {
     public static void main(String[] args) {
         greetOrNotGreetUser();
         helloVyacheslav();
+        getMultiplesOfThree();
     }
 
+    private static void getMultiplesOfThree() {
+        System.out.println("Введите длинну массива: ");
+        int arrayLength = scanner.nextInt();
+        if (arrayLength == 0) System.out.println("Введен пустой массив!");
+        else {
+            int[] array = new int[arrayLength];
+            for (int i = 0; i < arrayLength; i++) {
+                System.out.print(String.format("Введите %d элемент: ", i));
+                array[i] = scanner.nextInt();
+            }
+            System.out.println("Элементы массива, кратные 3: ");
+            for (int i = 0; i < arrayLength; i++) {
+                if (array[i] % 3 == 0 && array[i] != 0) System.out.println(String.format("%d ", array[i]));
+            }
+        }
+    }
 
     private static void helloVyacheslav() {
         System.out.println("Введите имя: ");
