@@ -3,7 +3,13 @@ package main.java.com.company;
 import static main.java.com.company.ConsoleInput.scanner;
 
 public class Main {
-
+    /*
+    Метод taskManager() создан, чтобы с его помощью выбрать и запустить алгоритм нужного тестового задания.
+    Метод greetOrNotGreetUser() реализует алгоритм задания №1
+    Метод helloVyacheslav() реализует алгоритм задания №2
+    Метод getMultiplesOfThree() реализует алгоритм задания №3 и выводит елемент массива, значение которого кратно 3.
+    Метод getMultiplesOfThree() реализует алгоритм задания №3 и выводит елемент массива, индекс которого кратен 3.
+     */
     public static void main(String[] args) {
         taskManager();
     }
